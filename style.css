@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.container {
+  padding: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Text color on hover */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.testimonial {
+  color: hsl(0, 0%, 20%); /* Change to your desired text color */
+}
+
+/* Style for Project Cards */
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s;
+} 
+.card:hover {
+  transform: scale(1.05);
+}
+/* Add styling for the header section */
+header {
+  padding: 50px 0;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Center align the text within the header */
+header h1, header p {
+  text-align: center;
+}
+
+/* Add styling for the contact form section */
+#contact {
+  padding: 20px;
+}
+
+/* Style the form inputs and textarea */
+.form-control {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Style the button */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the button on hover */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+footer h3 {
+  color: #fff;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social media icons */
+.fa-brands {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.fa-brands:hover{
+  color: #0056b3;
+}
+
+
+/* For Large Screens (lg) */
+@media (min-width: 992px) {
+  .portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add a small margin between rows */
+  }
+  .portfolio .col {
+    width: calc(33.33% - 20px); /* Adjust the width as needed for 3 columns */
+    margin-bottom: 20px;
+  }
+  .portfolio .col:not(:last-child) {
+    margin-right: 20px; /* Add a small right margin for spacing */
+  }
+}
+
+/* For Medium Screens (md) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add a small margin between rows */
+  }
+  .portfolio .col {
+    width: calc(50% - 20px); /* Adjust the width as needed for 2 columns */
+    margin-bottom: 20px;
+  }
+  .portfolio .col:not(:last-child) {
+    margin-right: 20px; /* Add a small right margin for spacing */
+  }
+  .col-md-6 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* For Small Screens (sm) */
+@media (max-width: 767px) {
+  .portfolio .row {
+    display: block;
+    margin-bottom: 20px; /* Add a small margin between rows */
+  }
+  .portfolio .col {
+    width: 100%; /* Set to 100% for a single column */
+    margin-bottom: 20px;
+  }
+}
